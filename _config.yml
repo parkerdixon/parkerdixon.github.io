@@ -2,7 +2,7 @@
 title: Parker's Blog
 description: Ongoing blog for my time at Metis
 cover: assets/images/radhakrishna.jpg
-logo: assets/images/logo.png
+logo:
 favicon: assets/images/favicon.png
 baseurl: "/" # the subpath of your site, e.g. /blog/ or / for root
 url:  # the base hostname & protocol for your site
@@ -15,9 +15,7 @@ linkedin: parker-dixon
 
 #Additional Pages
 about: about
-contact: contact
-privacy-policy: privacy-policy
-
+resume: resume
 
 permalink: /:title
 
