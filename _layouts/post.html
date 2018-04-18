@@ -15,13 +15,18 @@ layout: default
         <h2 class="ampstart-fullpage-hero-heading mb0">
           {% if page.author %}
           <span class="ampstart-fullpage-hero-heading-text description">
-            By <b><a href="{{ absolute_url }}" role="author" class="text-decoration-none author">{{page.author}}</a></b>
+            By <b><a href="#" role="author" class="text-decoration-none author">{{page.author}}</a></b>
           </span>
           {% endif %}
         </h2>
       </header>
       <footer class="absolute left-0 right-0 bottom-0">
-        <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
+        <a class="ampstart-readmore py3 caps line-height-2 center block h5" href="#content">
+          <span
+            style= "background-color: #2B3856; border: solid 10px #2B3856"
+            > Read more
+          </span>
+        </a>
       </footer>
     </figcaption>
   </figure>
@@ -35,10 +40,9 @@ layout: default
             in
             {% for tag in page.tags %}
                 {% if forloop.index == page.tags.size %}
-
-                   <a href='{{ absolute_url }}tags/#{{tag}}'>{{ tag | capitalize }}</a>
+                   <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>
                 {% else %}
-                   <a href='{{ absolute_url }}tags/#{{tag}}'>{{ tag | capitalize }}</a>,
+                   <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>,
                 {% endif %}
             {% endfor %}
         {% endif %}
