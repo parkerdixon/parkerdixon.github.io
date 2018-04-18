@@ -12,7 +12,8 @@ permalink: /authors/
 {% for post in site.posts %}
 {% if author[1].username == post.author %}
 {% if post.title != null %}
-<li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span> &raquo;
+<li itemscope>
+  <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span> &raquo;
   <a href="{{ post.url | absolute_url }}">{{ post.title }}
   </a>
 </li>
