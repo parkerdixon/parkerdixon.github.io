@@ -19,7 +19,7 @@ defaults:
     path: ''
     type: posts
   values:
-    permalink: "/blog/:title/"
+    permalink: "https://parkerdixon.github.io/:title/"
     layout: post
     author:
 
