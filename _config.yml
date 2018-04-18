@@ -9,7 +9,7 @@ url: "https://parkerdixon.github.io/" # the base hostname & protocol for your si
 paginate:	3 # The number of posts to show per page on your homepage
 # Social
 github:  parkerdixon
-
+linkedin:  parker-dixon
 #Additional Pages
 about: about
 resume: resume

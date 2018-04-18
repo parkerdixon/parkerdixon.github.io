@@ -3,11 +3,6 @@ layout: page
 title: Resume
 permalink: /resume/
 ---
+<img src="/assets/docs/resume.png" alt="Me" style="width: 850; height:1100px"/>
 
-### More Information
-
-Living in New York, data science student.
-
-### Contact me
-
-[parkerjamesdixon@gmail.com](mailto:parkerjamesdixon@gmail.com)
+[PDF Download](/assets/docs/resume.pdf)

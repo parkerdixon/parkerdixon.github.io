@@ -29,30 +29,23 @@
                 </svg>
             </a>
         </li>
-        {% endif %}
+        {% endif %} {% if site.linkedin %}
+        <li>
+          <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML linkedin">
+            <span class="icon  icon--linkedin">
+              <svg width="19" height="19" viewBox="0 50 512 512" >
+                <path fill="#ff6f00" d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
+                C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
+                M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615
+                c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915
+                s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z" class="ampstart-icon ampstart-icon-linkedin"/>
+              </svg>
+            </span>
+          </a>
+        </li>
+{% endif %}
 
     </ul>
-    <nav class="ampstart-footer-nav">
-        <ul class="list-reset flex flex-wrap mb3">
-            {% if site.about %}
-
-            <li class="px1">
-                <a class="text-decoration-none ampstart-label" href="{{site.baseurl}}{{site.about}}">About</a>
-            </li>
-            {% endif %} {% if site.contact %}
-
-            <li class="px1">
-                <a class="text-decoration-none ampstart-label" href="{{site.baseurl}}{{site.contact}}">Contact</a>
-            </li>
-            {% endif %} {% if site.privacy-policy %}
-
-            <li class="px1">
-                <a class="text-decoration-none ampstart-label" href="{{site.baseurl}}{{site.privacy-policy}}">Privacy Policy</a>
-            </li>
-            {% endif %}
-
-        </ul>
-    </nav>
     <small>
         &copy; 2017
     <a href="{{site.baseurl}}">{{site.name}}</a> &nbsp; | &nbsp;  All Rights Reserved.
