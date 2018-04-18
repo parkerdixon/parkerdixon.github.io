@@ -15,7 +15,7 @@ layout: default
         <h2 class="ampstart-fullpage-hero-heading mb0">
           {% if page.author %}
           <span class="ampstart-fullpage-hero-heading-text description">
-            By <b><a href="#" role="author" class="text-decoration-none author">{{page.author}}</a></b>
+            By <b><a href="{{ absolute_url }}" role="author" class="text-decoration-none author">{{page.author}}</a></b>
           </span>
           {% endif %}
         </h2>
@@ -35,9 +35,10 @@ layout: default
             in
             {% for tag in page.tags %}
                 {% if forloop.index == page.tags.size %}
-                   <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>
+
+                   <a href='{{ absolute_url }}tags/#{{tag}}'>{{ tag | capitalize }}</a>
                 {% else %}
-                   <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>,
+                   <a href='{{ absolute_url }}tags/#{{tag}}'>{{ tag | capitalize }}</a>,
                 {% endif %}
             {% endfor %}
         {% endif %}
