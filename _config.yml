@@ -5,7 +5,7 @@ cover: assets/images/radhakrishna.jpg
 logo:
 favicon: assets/images/favicon.png
 baseurl: "" # the subpath of your site, e.g. /blog/ or / for root
-url: "" # the base hostname & protocol for your site
+url: "https://parkerdixon.github.io" # the base hostname & protocol for your site
 paginate:	1 # The number of posts to show per page on your homepage
 paginate_path: index.html
 # Social
@@ -15,6 +15,14 @@ github:  parkerdixon
 about: about
 resume: resume
 
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author:
 
 permalink: /:title
 
