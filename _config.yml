@@ -1,22 +1,19 @@
 # Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
+title: Parker's Blog
+description: Blog for my time at Metis
 cover: assets/images/radhakrishna.jpg
-logo: assets/images/logo.png
+logo:
 favicon: assets/images/favicon.png
-baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://samanyougarg.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/ or / for root
+url: "" # the base hostname & protocol for your site
 paginate:	1 # The number of posts to show per page on your homepage
 
 # Social
-facebook: facebook
-twitter: twitter
-github:  github
+github:  parkerdixon
 
 #Additional Pages
 about: about
-contact: contact
-privacy-policy: privacy-policy
+resume: resume
 
 
 permalink: /:title
