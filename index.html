@@ -21,11 +21,11 @@ layout: default
     </header>
     {% if site.cover %}
     <footer class="absolute left-0 right-0 bottom-0">
-      <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
+      <a class="ampstart-readmore py3 caps line-height-2 center block h5" href="#content"><span>Read more</span></a>
     </footer>
     {% else %}
     <footer class="absolute left-0 right-0 bottom-0">
-      <a class="ampstart-read py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
+      <a class="ampstart-readmore py3 caps line-height-2 center block h5" href="#content"><span>Read more</span></a>
     </footer>
     {% endif %}
     </figcaption>
@@ -38,7 +38,7 @@ layout: default
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <div class="article-item">
           <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">{{ post.title }}</a></h2>
+            <h2 class="post-title" itemprop="name"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
           </header>
           <section class="post-excerpt" itemprop="description">
             <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
