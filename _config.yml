@@ -6,7 +6,7 @@ logo:
 favicon: /assets/images/favicon.png
 baseurl: "" # the subpath of your site, e.g. /blog/ or / for root
 url: "https://parkerdixon.github.io/" # the base hostname & protocol for your site
-paginate:	1 # The number of posts to show per page on your homepage
+paginate:	3 # The number of posts to show per page on your homepage
 # Social
 github:  parkerdixon
 linkedin:  parker-dixon
