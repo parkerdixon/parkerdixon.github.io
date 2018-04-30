@@ -101,13 +101,13 @@ layout: default
           <section class="ampstart-related-article-section p3 mb4 border-top">
               <h2 class="ampstart-heading ampstart-label m0 mb3">Related article</h2>
                 <article class="ampstart-related-article">
-                    {% if post.cover %}
+                    <!-- {% if post.cover %}
                     <amp-img src="{{ site.baseurl }}{{ post.cover }}" width="656" height="350" layout="responsive" alt="" class="mb3"></amp-img>
                     {% else %}
                         {% if site.cover %}
                         <amp-img src="{{ site.baseurl }}{{ site.cover }}" width="656" height="350" layout="responsive" alt="" class="mb3"></amp-img>
                         {% endif %}
-                    {% endif %}
+                    {% endif %} -->
                     {% assign count = 0 %}
                     {% for post in site.posts %}
                       {% if post.tags contains primary %}
@@ -122,7 +122,7 @@ layout: default
                               {{ post.content | strip_html | truncatewords:15 }}
                             {% endif %}
                             </p>
-                            <a href="{{ site.baseurl }}{{ post.url | remove: '/' }}" class="ampstart-rekated-article-readmore block text-decoration-none ampstart-label">Read more</a>
+                            <a href="{{ site.baseurl }}/{{ post.url | remove: '/' }}" class="ampstart-rekated-article-readmore block text-decoration-none ampstart-label">Read more</a>
                           {% endif %}
                         {% endif %}
                       {% endif %}
