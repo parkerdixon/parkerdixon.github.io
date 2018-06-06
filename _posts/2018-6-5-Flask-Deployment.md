@@ -124,4 +124,4 @@ The final step is to upload your code as a zip. Before your zip and deploy to AW
 
 If you followed these instructions as above, you should have an app up and running, but please feel free to contact me if you've had any issues, and I am happy to help you troubleshoot.
 
-Thank you for reading, and check out [the app](http://startupsv3-env.pft3wgfwbq.us-east-2.elasticbeanstalk.com/) I deployed while writing this tutorial!
+Thank you for reading, and check out [the app](http://startupsv3-env.pft3wgfwbq.us-east-2.elasticbeanstalk.com/) (the one I talk about in my last post) I deployed while writing this tutorial!
