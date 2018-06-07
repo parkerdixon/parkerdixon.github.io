@@ -3,7 +3,7 @@ layout: post
 cover:
 title: Deploying a Flask App to AWS
 date: 2018-06-05 08:00:00
-tags: Metis AWS Flask D3
+tags: Metis AWS Flask D3 tutorial
 author: Parker
 ---
 ## Using Elastic Beanstalk to share your work with the world<br>
