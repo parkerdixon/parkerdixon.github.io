@@ -78,3 +78,5 @@ I also created this similarity web for each of the players in my dataset (DeAndr
 
 ### Takeaways
 This project was a ton of fun for a variety of reasons. I really enjoyed being able to apply what I'm learning to something else that I love, and it was incredible satisfying to end up with results that somewhat reflect the consensus rankings. If I ever have a chance, I would love to be able to include European players in my sample, and perhaps try to project further into an NBA career beyond the rookie season. Given the time constraints of the project, I'm very pleased with the results that I was able to obtain. I even decided to build a [Flask app](http://flask.pocoo.org/) to easily navigate my predictions, and I'll plan on writing a quick post about that process when I have some time. This was a great learning experience, and I can't wait to see how these predictions work for the NBA next year.
+
+UPDATE: I deployed the app using AWS [here](http://nba-rook-pred.us-east-2.elasticbeanstalk.com/) and you can find my post with a tutorial on building and deploying a Flask app [here](https://parkerdixon.github.io/Flask-Deployment/).

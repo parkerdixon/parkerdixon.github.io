@@ -40,7 +40,7 @@ In addition, I found that the most important features in my model were the numbe
 
 #### Creating the dashboard
 
-Once I had an accurate model to use, I created a dashboard using Flask and D3 to allow for interpretable results. The dashboard allowed a user to vary the different features of the model (such as size of funding rounds and number of milestones met) in order to see the probability of exit based on the selection. Changing the features also created a similarity graph on the dashboard of startups from the sample with similar attributes. These nodes were all clickable, taking a user to the homepage for the company represented by the node so they could better explore these relationships. D3 was used to create the sliders for the feature selection, display the modeled probabilities, and generate the nodes (using a force directed graph).
+Once I had an accurate model to use, I created a dashboard using [Flask](http://startupsv3-env.pft3wgfwbq.us-east-2.elasticbeanstalk.com/) and D3 to allow for interpretable results. The dashboard allowed a user to vary the different features of the model (such as size of funding rounds and number of milestones met) in order to see the probability of exit based on the selection. Changing the features also created a similarity graph on the dashboard of startups from the sample with similar attributes. These nodes were all clickable, taking a user to the homepage for the company represented by the node so they could better explore these relationships. D3 was used to create the sliders for the feature selection, display the modeled probabilities, and generate the nodes (using a force directed graph).
 
 ![Picture description](/assets/startup/dashboard.png){: .center-image }<br>
 
