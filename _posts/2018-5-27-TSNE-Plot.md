@@ -86,7 +86,7 @@ for i in range(num_topics):
     plt.scatter(x[boolArr],y[boolArr],c=cmap(i*cmapScale),s=100)
     x_avg = np.median(x[boolArr])
     y_avg = np.median(y[boolArr])
-    plt.annotate(f'#{i+1}: {topWords[i][0]}',
+    plt.annotate(f'#{i+1}: {topics[i][0]}',
                  xy=(x_avg, y_avg),
                  xytext=(5, 2),
                  textcoords='offset points',
