@@ -77,7 +77,8 @@ figScale = 3
 
 plt.figure(figsize=(10*figScale, 10*figScale),facecolor='white')
 
-#For every topic, find the topic center by taking the median location of all points associated
+#For every topic, plot the points where that topic is the max and
+#find the topic center by taking the median location of all points associated
 #with the topic; draw a text box over it
 labels = [np.argmax(tok) for tok in tokens]
 for i in range(num_topics):
