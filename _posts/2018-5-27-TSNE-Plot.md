@@ -62,11 +62,8 @@ tokens = create_array_sample(nmfOutput,5000) #sample your NMF output
 tsneValues = TSNE(metric='cosine').fit_transform(tokens)
 
 #Separate out the output into x,y components
-x = []
-y = []
-for value in tsneValues:
-    x.append(value[0])
-    y.append(value[1])
+x = tsneValues[:,0]
+y = tsneValues[:,1]
 
 #label your topics with most common word in each topic; works just as well if topics is manually created
 topics = print_top_words(nmfModel,vectorizer.feature_names(),1)
@@ -80,26 +77,21 @@ figScale = 3
 
 plt.figure(figsize=(10*figScale, 10*figScale),facecolor='white')
 
-#Plot each point individually, set the color depending on the highest topic, and save that topic to 'label'
-labels = []
-for i in range(len(x)):
-    label = np.argmax(tokens[i])
-    labels.append(label)
-    plt.scatter(x[i],y[i], c=cmap(label*cmapScale),s= 20*figScale)
-
 #For every topic, find the topic center by taking the median location of all points associated
 #with the topic; draw a text box over it
-for i in range(n_topics):
+labels = [np.argmax(tok) for tok in tokens]
+for i in range(num_topics):
     boolArr = np.array(labels) == i
-    x_med = np.median(np.array(x)[boolArr])
-    y_med = np.median(np.array(y)[boolArr])
-    plt.annotate(topics[i],
-                 xy=(x_med, y_med),
+    plt.scatter(x[boolArr],y[boolArr],c=cmap(i*cmapScale),s=100)
+    x_avg = np.median(x[boolArr])
+    y_avg = np.median(y[boolArr])
+    plt.annotate(f'#{i+1}: {topWords[i][0]}',
+                 xy=(x_avg, y_avg),
                  xytext=(5, 2),
                  textcoords='offset points',
                  ha='center',
                  va='center',
-                 fontsize=7*figScale,
+                 fontsize=30,
                  bbox=dict(boxstyle="round", fc="whitesmoke",alpha=0.9))
 plt.axis('off')
 plt.title('t-SNE Plot for Job Descriptions with 15 Topics',fontsize=10*figScale)
